@@ -5,5 +5,6 @@ The following is an example of applying Q-learning to the Cart Pole environment 
 # Training results
 
 The following figure shows the amount of time the agent can balance the pole per iteration. Note that the environment is truncated at 500 time steps.  
+
 ![Results](https://github.com/MattZackey/Q-learning-with-Cartpole/blob/main/Training%20results.png?raw=true)
 
