@@ -9,8 +9,8 @@ from matplotlib import animation
 from trainagent import agent_cart
 
 example_path = 'example_run'
-if not os.path.exists(example_path ):
-    pathlib.Path(example_path ).mkdir(parents=True, exist_ok=True)
+if not os.path.exists(example_path):
+    pathlib.Path(example_path).mkdir(parents=True, exist_ok=True)
 
 frames = []
 env = gym.make("CartPole-v1", render_mode="rgb_array")
@@ -27,4 +27,4 @@ while not done:
     state = torch.tensor(next_state)
 env.close()
 
-imageio.mimsave(os.path.join(example_path , 'run800.gif'), frames, fps=30)
+imageio.mimsave(os.path.join(example_path, 'run800.gif'), frames, fps=30)
